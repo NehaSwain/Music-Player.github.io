@@ -1,0 +1,513 @@
+body{
+    background-color:#060426;
+}
+h3{
+    color:white;
+}
+i:hover{
+    opacity:0.5;
+}
+:root{
+    --i-color:grey;
+}
+/*.......................Header.........................*/
+#head{
+    width:100%;
+    height:8vh;
+    position:relative;
+}
+#head div img{
+    position:absolute;
+    top:0.4rem;
+    left:7%;
+    height:2.5rem;
+    width:2.5rem;
+}
+#head div span{
+    position:absolute;
+    top:0.75rem;
+    left:11%;
+    font-size:0.75rem;
+    color:white;
+}
+#search{
+    position:absolute;
+    top:0.75rem;
+    right:33%;
+    height:5rem;
+    width:5rem;
+    color:var(--i-color);
+    z-index:1;
+}
+#head input{
+    position:absolute;
+    top:0.75rem;
+    right:20%;
+    background-color:#0b1f40;
+    height:1rem;
+    width:15rem;
+}
+#mic{
+    position:absolute;
+    top:0.8rem;
+    right:15%;
+    height:5rem;
+    width:5rem;
+    color:var(--i-color);
+}
+#bell{
+    position:absolute;
+    top:0.75rem;
+    right:11%;
+    height:5rem;
+    width:5rem;
+    color:white;
+}
+#pic{
+    position:absolute;
+    top:0.4rem;
+    right:10%;
+    height:2rem;
+    width:2rem;
+   border-radius: 50%;
+}
+/*.....................Main Section.......................*/
+main{
+    display:inline-block;
+    margin-top:5%;
+    margin-left:5%;
+    width:60vw;
+    height:92vh;
+}
+div.flex-settings{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+   
+}
+/*..........First block with hover animation........*/
+#first-block{
+    height:25%;
+}
+img.first-div{
+    height:100%;
+    width:32%;
+    transition: 1s ease-in-out;
+}
+.first-div:hover{
+    transform:scale(1.5,1.5);
+    z-index:1;
+}
+/*................Latest Release................*/
+#second-block{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-bottom:2%;
+    height:18%;
+}
+#second-block div{
+    width:45%;
+    height:45%;
+}
+#second-block .dropdown{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left:45%;
+    width:1rem;
+}
+.dropdown i{
+    float:right;
+    top:0.25rem;
+    right:0.25rem;
+    color:var(--i-color);
+}
+ .dropdown .dropdown-menu{
+    display: none;
+   position: absolute;
+   z-index: 1;
+}
+.dropdown-menu a{
+    background-color:white;
+    color:black;
+    padding:0.2rem 0.5rem;
+    text-decoration: none;
+    display:block;
+    width:6rem;
+    height:1rem;
+    font-size:0.75rem;
+    font-weight:light;
+    border-bottom:1px solid black;
+}
+.dropdown-menu a:hover{
+    background-color:lightgrey;
+}
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+img.latest-release{
+    display:inline-block;
+    width:20%;
+    height:100%;
+}
+img.latest-release:hover{
+    opacity:0.5;
+}
+span{
+    display:inline-block;
+    vertical-align: top;
+    font-size:0.7rem;
+}
+/*................Popular Artist................*/
+#popular-artist{
+    height:20%;
+}
+#popular-artist div{
+    height:100%;
+    width:14%;
+}
+#popular-artist div a img{
+    height:85%;
+    width:85%;
+    border-radius:50%;
+    text-align: center;
+}
+#popular-artist div a img:hover{
+    opacity:0.5;
+}
+#popular-artist div a span{
+    color:white;
+    text-indent:1rem;
+}
+/*................Genre................*/
+#Genre{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height:15%;
+    background-color:#0b1f40;
+    position:relative;
+    margin:5% 0 2% 0;
+}
+#genre-list{
+    height:95%;
+    width:10%;
+    }
+#layer1{
+    position:absolute;
+    top:1rem;
+    left:1.5rem;
+    bottom:1rem;
+    background-color:yellow;
+    height:53px;
+    width:55px;
+}
+#layer2{
+    position:absolute;
+    top:0.75rem;
+    left:2rem;
+    bottom:0.75rem;
+    background-color:#fcca03;
+    height:58px;
+    width:50px;
+    z-index:1;
+}
+#genre-list img{
+    position:absolute;
+    top:0.5rem;
+    left:2.5rem;
+    bottom:0.5rem;
+    height:62px;
+    width:45px;
+    z-index:2;
+}
+#genre-tool{
+    margin:0.5rem;
+    width:85%;
+    height:90%;
+}
+#genre-tool img{
+    height:4rem;
+    width:5rem;
+    border-radius:50%;
+}
+#genre-tool img:hover{
+    opacity:0.5;
+}
+/*................Theme................*/
+ #theme{
+     height:20%;
+     color:white;
+     letter-spacing: 0.1rem;    
+ }
+ #theme div{
+     background-image: url("images/party.jpg");
+     width:32%;
+     height:100%;
+     position: relative;
+     transition: transform 1s ease-in-out;
+ }
+ #theme div:hover{
+     transform:scale(1.5,1.5);
+     z-index:1;
+ }
+ #theme div span{
+     position: absolute;
+     top:50%;
+     left:45%;
+     font-size: 1rem;
+ }
+ /*................Latest English/Hindi................*/
+ .latest{
+     height:30%;
+     margin-bottom:3%;
+ }
+ .latest div{
+     width:16%;
+     height:100%;
+ }
+ .latest div img{
+     width:100%;
+     height:80%;
+     transition:1s ease-in-out;
+ }
+ .latest div img:hover{
+     transform:scale(1,0.9);
+ }
+ .latest div span{
+     color:white;
+ }
+/*.........................Aside..........................*/
+aside{
+    display:inline-block;
+    width:25vw;
+    vertical-align: top;
+    margin-top:3%;
+    margin-left:3%;
+}
+li.queue{
+    position:relative;
+    height:3rem;
+    width:100%;
+    margin-left:-2rem;
+    padding-left:5%;
+    }
+li.queue img{
+    display:inline-block;
+    height:85%;
+    width:15%;
+    margin:2%;
+    border-radius:5%;
+    margin-left: 5%;
+    }
+li.queue img:hover{
+    opacity:0.5;
+}
+li.queue span{
+    display:inline-block;
+    height:50%;
+    vertical-align:middle;
+    color:var(--i-color);
+    font-size:0.75em;
+    margin-top:-20%;
+    }
+li.queue i{
+    position:absolute;
+    top:1rem;
+    right:10%;
+    font-size:1rem;
+    color:var(--i-color);
+}
+aside div.dropdown{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top:1.25rem;
+    left:30%;
+    width:1rem;
+}
+
+
+/*.........................Footer.........................*/
+#footer{
+    position:fixed;
+    bottom:0;
+    z-index:3;
+    width:100%;
+    height:8%;
+    background-color:#403d3d;
+    color:white;
+    font-size:0.5rem;
+    padding:0.3rem 0 0.3rem 5rem;
+}
+#footer img{
+    display:inline-block;
+    height:80%;
+    width:3%;
+}
+#footer img:hover{
+    opacity:0.5;
+}
+#text{
+    display:inline-block;
+    vertical-align:top;
+    margin-left:0.5rem;
+    font-size:0.75rem;
+}
+#footicon{
+    display:inline-block;
+    vertical-align:top;
+    margin-left:0.5rem;
+}
+#footicon i{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+#controls{
+    position: absolute;
+    top:0.5rem;
+    left:30%;
+    display:flex;
+    justify-content: space-evenly;
+    height:30%;
+    width:30%;
+}
+#controls i{
+    font-size:small;
+}
+#ranges{
+    position:absolute;
+    top:2rem;
+    left:25%;
+    height:30%;
+    width:50%;
+ }
+#ranges input{
+    width:75%;
+    height:30%;
+    background-color: green;
+}
+#side{
+    position:absolute;
+    top:1rem;
+    right:10%;
+    height:20%;
+}
+#side input{
+    height:30%;
+    width:50%;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+/*.....................Second Page......................*/
+#second-main{
+    display:inline-block;
+    margin-top:5%;
+    margin-left:5%;
+    width:58vw;
+    height:92vh;
+    position:relative;
+}
+#singer-info{
+    background-color: #0b1f40;
+    height:55%;
+}
+#singer{
+    display:inline-block;
+    width:28%;
+    height:100%;
+    background-image: linear-gradient(to bottom,rgba(52, 56, 92,0.52),rgba(20, 26, 87,0.73)),url('images/Coldplay1.jpg');
+    background-repeat: no-repeat;
+}
+#singer1{
+    display:inline-block;
+    color:white;
+    font-size: 0.6rem;
+    vertical-align: top;
+    width:50%;
+    height:80%;
+    margin-top:1.5rem;
+    margin-left:2rem;
+}
+#singer1 button{
+    display:inline-block;
+    width:6rem;
+    height:2rem;
+    line-height: 50%;
+    background-image: linear-gradient(to bottom,rgb(235, 186, 52),rgb(235, 125, 52));
+}
+#song-list li{
+    background-color: #0b1f40;  
+}
+li.queue1{
+    position:relative;
+    height:3.5rem;
+    width:90;
+    margin-left:-2.5rem;
+    margin-bottom:0.5rem;
+    }
+li.queue1 img{
+    display:inline-block;
+    height:85%;
+    width:6%;
+    border-radius:5%;
+    margin: 0.3rem 1rem 0.3rem 1rem;
+    }
+li.queue1 img:hover{
+    opacity:0.5;
+}
+li.queue1 span{
+    display:inline-block;
+    height:50%;
+    vertical-align:top;
+    color:var(--i-color);
+    font-size:0.75em;
+    margin-top:0.3rem;
+    margin-left:0.5rem; 
+  }
+li.queue1 i{
+    position:absolute;
+    top:1rem;
+    right:10%;
+    font-size:1rem;
+    color:var(--i-color);
+}
+.span-color{
+    color:white;
+}
+@media screen and (max-width:800px){
+   #head div span{
+       display:none;
+   }
+   #head i{
+       display:none;
+   }
+   #genre-list{
+       display:none;
+   }
+   .latest{
+       height:20%
+   }
+   #popular-artist{
+       height:15%;
+   }
+   #genre-tool img{
+       height:3.5rem;
+       width:4rem;
+   }
+}
+@media screen and (max-width:600px)
+{
+    main{
+        width:90%;
+    }
+    aside{
+        display:none;
+    }
+    #second-main{
+        width:95%;
+    }
+}
